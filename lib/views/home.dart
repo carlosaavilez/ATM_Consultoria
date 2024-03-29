@@ -10,6 +10,12 @@ class HomeAtm extends StatefulWidget {
 class _HomeAtmState extends State<HomeAtm> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      backgroundColor: Colors.blue,
+      appBar: AppBar(
+        title: Text("Consultoria ATM"),
+
+      )
+    );
   }
 }
