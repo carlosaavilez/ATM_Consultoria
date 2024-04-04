@@ -15,7 +15,11 @@ class _HomeAtmState extends State<HomeAtm> {
       appBar: AppBar(
         title: Text("Consultoria ATM"),
 
-      )
+      ),
+      body: Container(
+        padding: EdgeInsets.all(16),
+        child: Column(),
+      ),
     );
   }
 }
