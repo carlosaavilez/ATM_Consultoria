@@ -11,7 +11,17 @@ class _EmpresaState extends State<Empresa> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(Title: Text("Empresa"))
+      appBar: AppBar(title: Text("Empresa")),
+      body: Column(
+        children: [
+          Row(
+            children: [
+              Image.asset("imagens/detalhe_empresa.png"),
+              Text("Sobre empresa")
+            ],
+          )
+        ],
+      ),
     );
   }
 }

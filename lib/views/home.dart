@@ -1,3 +1,7 @@
+import 'package:app_atm/views/cliente.dart';
+import 'package:app_atm/views/contato.dart';
+import 'package:app_atm/views/empresa.dart';
+import 'package:app_atm/views/servico.dart';
 import 'package:flutter/material.dart';
 
 class HomeAtm extends StatefulWidget {
@@ -8,6 +12,22 @@ class HomeAtm extends StatefulWidget {
 }
 
 class _HomeAtmState extends State<HomeAtm> {
+  void abrirServico() {
+    Navigator.push(context, MaterialPageRoute(builder: (context) => Servico()));
+  }
+
+  void abrirCliente() {
+    Navigator.push(context, MaterialPageRoute(builder: (context) => Cliente()));
+  }
+
+  void abrirContato() {
+    Navigator.push(context, MaterialPageRoute(builder: (context) => Contato()));
+  }
+
+  void abrirEmpresa() {
+    Navigator.push(context, MaterialPageRoute(builder: (context) => Empresa()));
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -28,12 +48,14 @@ class _HomeAtmState extends State<HomeAtm> {
               children: [
                 GestureDetector(
                   child: Image.asset("imagens/menu_servico.png"),
+                  onTap: abrirServico,
                 ),
                 SizedBox(
                   width: 30,
                 ),
                 GestureDetector(
                   child: Image.asset("imagens/menu_empresa.png"),
+                  onTap: abrirEmpresa,
                 ),
               ],
             ),
@@ -45,12 +67,14 @@ class _HomeAtmState extends State<HomeAtm> {
               children: [
                 GestureDetector(
                   child: Image.asset("imagens/menu_cliente.png"),
+                  onTap: abrirCliente,
                 ),
                 SizedBox(
                   width: 30,
                 ),
                 GestureDetector(
                   child: Image.asset("imagens/menu_contato.png"),
+                  onTap: abrirContato,
                 ),
               ],
             ),

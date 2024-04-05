@@ -1,15 +1,27 @@
 import 'package:flutter/material.dart';
 
-class MyWidget extends StatefulWidget {
-  const MyWidget({super.key});
+class Cliente extends StatefulWidget {
+  const Cliente({super.key});
 
   @override
-  State<MyWidget> createState() => _MyWidgetState();
+  State<Cliente> createState() => _ClienteState();
 }
 
-class _MyWidgetState extends State<MyWidget> {
+class _ClienteState extends State<Cliente> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(appBar: AppBar(Title: Text("Cliente")));
+    return Scaffold(
+      appBar: AppBar(title: Text("Cliente")),
+      body: Column(
+        children: [
+          Row(
+            children: [
+              Image.asset("imagens/detalhe_cliente.png"),
+              Text("Sobre o cliente")
+            ],
+          )
+        ],
+      ),
+    );
   }
 }
