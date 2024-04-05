@@ -19,7 +19,15 @@ class _ContatoState extends State<Contato> {
               Image.asset("imagens/detalhe_contato.png"),
               Text("Sobre o contato")
             ],
-          )
+          ),
+          Padding(
+            padding: EdgeInsets.only(top: 16),
+            child: Text("atendimento@atm.com.br"),
+          ),
+          Padding(
+            padding: EdgeInsets.only(top: 16),
+            child: Text("11-999999999"),
+          ),
         ],
       ),
     );
